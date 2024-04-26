@@ -105,13 +105,16 @@ li {
     transition-duration: .4s;
     font-weight: bold;
     background-position: center;
+    box-shadow: 0 4px 0 #142451;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./imges/itijiteisi.png);
 }
 
 #dopause:hover {
-    animation: purupuru .2s;
+    transition-duration: .4s;
+    transform: translateY(4px);
+    box-shadow: none;
     cursor: pointer;
 }
 
@@ -129,35 +132,18 @@ li {
     font-weight: bold;
     background-position: center;
     background-size: cover;
+    box-shadow: 0 2px 0 #142451;
     background-repeat: no-repeat;
     background-image: url(./imges/mute1.png);
     margin-right: 20px;
 }
 
 
-#mute::before {
-    content: "";
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 50%;
-    background: rgba(2, 223, 55, 0.5);
-    transition: transform ease .3s;
-    z-index: 100;
-    transform-origin: 50% 50%;
-    transform: scaleX(0);
-}
-
 #mute:hover {
+    transition-duration: .4s;
+    transform: translateY(2px);
     cursor: pointer;
-}
 
-#mute:hover::before {
-    transform-origin: 50% 50%;
-    transform: scaleX(1);
 }
 
 #do10sNext {
@@ -173,13 +159,16 @@ li {
     transition-duration: .4s;
     font-weight: bold;
     background-position: center;
+    box-shadow: 0 4px 0 #142451;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./imges/10byoususumu.png);
 }
 
 #do10sNext:hover {
-    animation: migi 1s;
+    transition-duration: .4s;
+    transform: translateY(4px);
+    box-shadow: none;
     cursor: pointer;
 }
 
@@ -210,13 +199,16 @@ li {
     transition-duration: .4s;
     font-weight: bold;
     background-position: center;
+    box-shadow: 0 4px 0 #142451;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./imges/10byoumodoru.png);
 }
 
 #do10sPrev:hover {
-    animation: hidari 1s;
+    transition-duration: .4s;
+    transform: translateY(4px);
+    box-shadow: none;
     cursor: pointer;
 }
 
