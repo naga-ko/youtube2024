@@ -1,0 +1,307 @@
+ul {
+    margin-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.all {
+    padding-top: 20px;
+    background-color: cornsilk;
+    max-width: 656px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#player {
+    margin-left: 29px;
+    width: 600px;
+}
+
+.nav {
+    width: 640px;
+}
+
+#doplay {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 4px 0 #142451;
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./imges/saisei.png);
+}
+
+#doplay:hover {
+    transition-duration: .4s;
+    transform: translateY(4px);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+@keyframes purupuru {
+
+    0%,
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+
+    25% {
+        transform: skew(3deg, 3deg);
+    }
+
+    75% {
+        transform: skew(-3deg, -3deg);
+    }
+}
+
+
+#dostop {
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 4px 0 #511414;
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./imges/teisi.png);
+}
+
+#dostop:hover {
+    transition-duration: .4s;
+    transform: translateY(4px);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#dopause {
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    transition-duration: .4s;
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./imges/itijiteisi.png);
+}
+
+#dopause:hover {
+    animation: purupuru .2s;
+    cursor: pointer;
+}
+
+#mute {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./imges/mute1.png);
+    margin-right: 20px;
+}
+
+
+#mute::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50%;
+    background: rgba(2, 223, 55, 0.5);
+    transition: transform ease .3s;
+    z-index: 100;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+}
+
+#mute:hover {
+    cursor: pointer;
+}
+
+#mute:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+#do10sNext {
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    transition-duration: .4s;
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./imges/10byoususumu.png);
+}
+
+#do10sNext:hover {
+    animation: migi 1s;
+    cursor: pointer;
+}
+
+@keyframes migi {
+
+    0%,
+    50%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    25%,
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+#do10sPrev {
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    transition-duration: .4s;
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./imges/10byoumodoru.png);
+}
+
+#do10sPrev:hover {
+    animation: hidari 1s;
+    cursor: pointer;
+}
+
+@keyframes hidari {
+
+    0%,
+    50%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    25%,
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+.list {
+    max-width: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list2 {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list3 {
+    display: flex;
+    align-items: center;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+.search__all {
+    margin-top: 20px;
+    text-align: left;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ytMovie {
+    max-width: 235.5px;
+    border-radius: 10px;
+}
+
+#ytSearch {
+    border-radius: 10px;
+}
+
+#searchBtn {
+    border-radius: 10px;
+}
+
+#searchBtn:hover {
+    cursor: pointer;
+}
+
+.searchlist {
+    border-radius: 10px;
+}
+
+#volume:hover {
+    cursor: ew-resize;
+}
+
+#slow:hover {
+    cursor: pointer;
+}
+
+#normal:hover {
+    cursor: pointer;
+}
+
+#hspeed:hover {
+    cursor: pointer;
+}
+
+#mhspeed:hover {
+    cursor: pointer;
+}
+
+#doSpeed label:hover {
+    cursor: pointer;
+}
