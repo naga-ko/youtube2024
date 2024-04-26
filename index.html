@@ -40,17 +40,28 @@
                     </select>
                 </li>
                 <li>
+                    <p class="speedBtn">倍速</p>
                     <form id="doSpeed">
-                        <input type="radio" id="mslow" name="speed" value="0.25" />
-                        <label for="mslow">0.25</label>
-                        <input type="radio" id="slow" name="speed" value="0.5" />
-                        <label for="slow">0.5</label>
-                        <input type="radio" id="normal" name="speed" value="1.0" checked />
-                        <label for="normal">1</label>
-                        <input type="radio" id="hspeed" name="speed" value="1.5" />
-                        <label for="hspeed">1.5</label>
-                        <input type="radio" id="mhspeed" name="speed" value="2" />
-                        <label for="mhspeed">2</label>
+                        <div class="speed">
+                            <input type="radio" id="mslow" name="speed" value="0.25" />
+                            <label for="mslow">0.25</label>
+                        </div>
+                        <div class="speed">
+                            <input type="radio" id="slow" name="speed" value="0.5" />
+                            <label for="slow">0.5</label>
+                        </div>
+                        <div class="speed">
+                            <input type="radio" id="normal" name="speed" value="1.0" checked />
+                            <label for="normal">1</label>
+                        </div>
+                        <div class="speed">
+                            <input type="radio" id="hspeed" name="speed" value="1.5" />
+                            <label for="hspeed">1.5</label>
+                        </div>
+                        <div class="speed">
+                            <input type="radio" id="mhspeed" name="speed" value="2" />
+                            <label for="mhspeed">2</label>
+                        </div>
                     </form>
                 </li>
             </ul>
@@ -259,6 +270,18 @@
             e.preventDefault(); //検索ボタンの送信をストップしておく。
             //関数の実行
             ytSearch(ytSearchVal);
+        });
+
+        const SpeedBtn = document.querySelector(".speedBtn");
+        const DoSpeed = document.getElementById("doSpeed");
+        SpeedBtn.addEventListener("click", function () {
+            if (i == 1) {
+                DoSpeed.style.display = "none";
+                var i = 0;
+            } else {
+                DoSpeed.style.display = "flex";
+                var i = 1;
+            };
         });
     </script>
 </body>

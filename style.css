@@ -13,10 +13,11 @@ li {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 7%;
 }
 
 #player {
-    margin-left: 29px;
+    margin-left: 3vw;
     width: 90%;
 }
 
@@ -146,7 +147,7 @@ li {
     background: rgba(2, 223, 55, 0.5);
     transition: transform ease .3s;
     z-index: 100;
-    transform-origin: 100% 50%;
+    transform-origin: 50% 50%;
     transform: scaleX(0);
 }
 
@@ -155,7 +156,7 @@ li {
 }
 
 #mute:hover::before {
-    transform-origin: 0% 50%;
+    transform-origin: 50% 50%;
     transform: scaleX(1);
 }
 
@@ -249,7 +250,7 @@ li {
 .list3 {
     display: flex;
     align-items: center;
-    width: 340px;
+    width: 58%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 30px;
@@ -264,7 +265,8 @@ li {
 }
 
 .ytMovie {
-    max-width: 235.5px;
+    max-width: 260px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -305,5 +307,36 @@ li {
 }
 
 #doSpeed label:hover {
+    cursor: pointer;
+}
+
+#doSpeed {
+    display: none;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.speed {
+    width: 30px;
+    text-align: center;
+}
+
+.speedBtn {
+    background-color: #fff;
+    width: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 30%;
+    border: #000 1px solid;
+    box-shadow: 0 2px 0 #142451;
+}
+
+.speedBtn:hover {
+    transition-duration: .4s;
+    transform: translateY(2px);
+    box-shadow: none;
     cursor: pointer;
 }
